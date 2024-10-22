@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tone Gen</title>
+	<meta name="description"
+		content="A simple tone generator with a canvas and tone generator. IDK what u expected here.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+	<h1 center>Tone Gen</h1>
+	<canvas id="wave"></canvas>
+	<div id="freqcontainer" center>
+		<input type="range" min="20" max="20000" value="440" id="freq" center>
+		<h3 center><span id="freqVal"></span></h3>
+	</div>
+
+	<div id="typeSelection">
+		<div id="sine">Sine</div>
+		<div id="square">Square</div>
+		<div id="sawtooth">Sawtooth</div>
+		<div id="triangle">Triangle</div>
+	</div>
+
+	<div id="play">Play</div>
+	<script src="script.js" async defer></script>
+</body>
+
+</html>
